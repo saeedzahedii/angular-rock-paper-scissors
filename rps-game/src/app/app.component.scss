@@ -1,0 +1,56 @@
+.main {
+    width: 500px;
+    margin: 20vh auto 0px;
+    .turns {
+        background-color: #f1f1f1;
+        border-radius: 20px;
+        padding: 20px;
+        p {
+            margin: 0px;
+        }
+    }
+}
+.results-board {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 0px;
+    .player,
+    .system {
+        background-color: #f1f1f1;
+        border-radius: 20px;
+        padding: 35px;
+    }
+}
+.choices {
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    div {
+        border: dashed 3px #818181;
+        padding: 25px;
+        border-radius: 50%;
+        background-color: #f1f1f1;
+        transition: all 0.4s ease;
+    }
+    img {
+        height: 60px;
+    }
+}
+.choices div:hover {
+    transition: all 0.4s ease;
+}
+.w-100 {
+    background-color: rgb(29, 124, 231);
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px 0px;
+    p {
+        margin: 0px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}

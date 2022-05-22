@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="main text-center">
+    <div class="turns">
+      <p>Turns Left 3</p>
+    </div>
+
+    <div class="results-board">
+      <div class="player">
+        <div>
+          <h3>Player Win</h3>
+        </div>
+        <div>
+          <h3>
+            0
+          </h3>
+        </div>
+      </div>
+      <div class="system">
+        <div>
+          <h3>System Win</h3>
+        </div>
+        <div>
+          <h3>
+            0
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="choices text-center">
+      <div [style.border-color]="active==0 ? 'green': '#818181'" (click)="onSelectChoice(0)">
+        <img src="assets/rock.png" alt="">
+      </div>
+      <div [style.border-color]="active==1 ? 'green': '#818181'" (click)="onSelectChoice(1)">
+        <img src="assets/paper.png" alt="">
+      </div>
+      <div [style.border-color]="active==2 ? 'green': '#818181'" (click)="onSelectChoice(2)">
+        <img src="assets/scissors.png" alt="">
+      </div>
+    </div>
+    <div class="w-100" (click)="onPlay()">
+      <p>
+        Play
+      </p>
+    </div>
+  </div>
+</div>
