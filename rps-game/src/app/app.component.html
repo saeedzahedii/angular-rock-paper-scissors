@@ -5,7 +5,7 @@
     </div>
 
     <div class="results-board">
-      <div class="player" [ngClass]="{win:pwin}">
+      <div class="player" [ngClass]="{win: pwin==0, lose: pwin==1}">
         <div>
           <h3>Player Win</h3>
         </div>
@@ -15,7 +15,7 @@
           </h3>
         </div>
       </div>
-      <div class="system" [ngClass]="{win:swin}">
+      <div class="system" [ngClass]="{win: swin==0, lose: swin==1}">
         <div>
           <h3>System Win</h3>
         </div>
@@ -38,10 +38,12 @@
         <img src="assets/scissors.png" alt="">
       </div>
     </div>
-    <div class="w-100" (click)="onPlay()">
-      <p>
-        Play
-      </p>
+    <div class="play-reset" style="margin-top:30px;" (click)="onPlay()">
+      <button class="btn btn-primary">play</button>
+    </div>
+    <br>
+    <div class="play-reset">
+      <button class="btn btn-danger">reset</button>
     </div>
   </div>
 </div>

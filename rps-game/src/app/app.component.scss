@@ -22,7 +22,11 @@
         padding: 35px;
     }
     .win {
-        background: green;
+        background-color: green;
+        color: white;
+    }
+    .lose {
+        background-color: red;
         color: white;
     }
 }
@@ -46,15 +50,11 @@
 .choices div:hover {
     transition: all 0.4s ease;
 }
-.w-100 {
-    background-color: rgb(29, 124, 231);
+.play-reset .btn {
+    width: 95%;
     color: white;
     border-radius: 20px;
     padding: 20px;
-    margin: 50px 0px;
-    p {
-        margin: 0px;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
+    text-transform: uppercase;
+    font-weight: bold;
 }
