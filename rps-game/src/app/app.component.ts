@@ -12,6 +12,8 @@ export class AppComponent {
   public message: string = '';
   public playerWon: number = 0;
   public systemWon: number = 0;
+  public pwin: boolean | undefined;
+  public swin: boolean | undefined;
   onSelectChoice(ch: number) {
     this.active = ch;
     this.playerChoice = this.active;
@@ -73,5 +75,10 @@ export class AppComponent {
         this.active = undefined;
       }
     }
+    this.onCheckWinner(this.playerWon, this.systemWon);
+  }
+
+  onCheckWinner(pw: number, sw: number) {
+    (pw > sw) ? this.pwin = true : this.swin = false;
   }
 }
