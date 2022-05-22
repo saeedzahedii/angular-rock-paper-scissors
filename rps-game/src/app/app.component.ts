@@ -92,7 +92,15 @@ export class AppComponent implements OnInit {
       return;
     }
   }
-  ngOnChanges() {
-
+  onReset() {
+    this.active = undefined;
+    this.playerChoice = undefined;
+    this.systemChoice = undefined;
+    this.message = '';
+    this.turns = 5;
+    this.playerWon = 0;
+    this.systemWon = 0;
+    this.swin = undefined;
+    this.pwin = undefined;
   }
 }

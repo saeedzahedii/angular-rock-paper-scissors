@@ -7,7 +7,7 @@
     <div class="results-board">
       <div class="player" [ngClass]="{win: pwin==0, lose: pwin==1}">
         <div>
-          <h3>Player Win</h3>
+          <h3>Player</h3>
         </div>
         <div>
           <h3>
@@ -15,9 +15,13 @@
           </h3>
         </div>
       </div>
+      <div class="remained-turns">
+        turns remain<br>
+        {{turns}}
+      </div>
       <div class="system" [ngClass]="{win: swin==0, lose: swin==1}">
         <div>
-          <h3>System Win</h3>
+          <h3>System</h3>
         </div>
         <div>
           <h3>
@@ -42,8 +46,8 @@
       <button class="btn btn-primary">play</button>
     </div>
     <br>
-    <div class="play-reset">
-      <button class="btn btn-danger">reset</button>
+    <div class="play-reset" (click)="onReset()">
+      <button class=" btn btn-danger">reset</button>
     </div>
   </div>
 </div>

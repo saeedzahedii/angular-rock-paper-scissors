@@ -15,6 +15,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 40px 0px;
+    align-items: center;
     .player,
     .system {
         background-color: #f1f1f1;
@@ -28,6 +29,10 @@
     .lose {
         background-color: red;
         color: white;
+    }
+    .remained-turns {
+        font-weight: bold;
+        text-transform: uppercase;
     }
 }
 .choices {
