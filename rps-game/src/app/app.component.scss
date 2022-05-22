@@ -1,6 +1,9 @@
 .main {
     width: 500px;
-    margin: 20vh auto 0px;
+    margin: 17vh auto 0px;
+    background: #ffabb7;
+    padding: 30px;
+    border-radius: 30px;
     .turns {
         background-color: #f1f1f1;
         border-radius: 20px;
@@ -42,7 +45,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     div {
-        border: dashed 3px #818181;
+        border: dashed 3px #f1f1f1;
         padding: 25px;
         border-radius: 50%;
         background-color: #f1f1f1;
