@@ -25,3 +25,5 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![This is an image](https://github.com/saeedzahedii/angular-rock-paper-scissors/blob/main/rps-game/src/assets/screencapture-localhost-4200-2023-01-01-10_14_42.png)
+
